@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the whole body.*/
+.container {
+    background-image: url("images/whiteback.png");
+}
+
+/* Parent header. Flexbox application */
+.header {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Header buttons: children of .header */
+#index {
+    color: black;
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 32px;
+    margin: auto;
+    margin-right: 50px;
+    text-align: center;
+}
+#index:hover {
+    color: #D2691E;
+    text-decoration: none;
+}
+
+.headerButton {
+    color: black;
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.headerButton:hover {
+    color: #D2691E;
+    text-decoration: none;
+}
+
+#linkedin {
+    background-image: url("images/linkedin.png");
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 100px;
+}
+
+#github {
+    background-image: url("images/github.png");
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 20px;
+}
+
+#instagram {
+    background-image: url("images/instagram.png");
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 20px;
+}
+
+/* INDEX.HTML */
+/* Photo */
+.myphoto {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#photo {
+    height: 300px;
+    border-radius: 50%;
+}
+.myname {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-family: Georgia, sans-serif;
+}
+
+
+.indexText {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+#pcphoto {
+    height: 450px;
+    width: 600px;
+    border-radius: 1px;
+}
+
+#indexDescription {
+    margin-left: 20px;
+    margin-top: 35px;
+    font-family: georgia, sans-serif;
+    text-align: left;
+}
+
+#listIndex {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+/* SKILLS.HTML */
+.skillsBody {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#progressbar {
+    text-align: left;
+}
+
+/* HOBBIES.HTML */
+
+.hobbiesBody {
+    font-family: Georgia, sans-serif;
+    text-align: left;
+    width: 100%;
+}
+
+#hobbiesTitle {
+    text-align: center;
+}
+
+#fiancee {
+    list-style-image: url("images/fiancee.png");
+    font-size: 20px;
+}
+
+#dog {
+    list-style-image: url("images/pets.png");
+    font-size: 20px;
+}
+
+
+#gaming {
+    list-style-image: url("images/gaming.png");
+    font-size: 20px;
+}
+
+#weightlifting {
+    list-style-image: url("images/weightlifting.png");
+    font-size: 20px;
+}
+
+#running {
+    list-style-image: url("images/running.png");
+    font-size: 20px;
+}
+
+#reading {
+    list-style-image: url("images/reading.png");
+    font-size: 20px;
+}
+
+#traveling {
+    list-style-image: url("images/traveling.png");
+    font-size: 20px;
+}
+
+#movies {
+    list-style-image: url("images/movies.png");
+    font-size: 20px;
+}
+
+#fiancee:hover, #dog:hover, #gaming:hover, #weightlifting:hover,
+#running:hover, #reading:hover, #traveling:hover,
+#movies:hover, #traveling:hover { color: red;}
+
+/* CONTACT.HTML */
+
+.contactBody {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#email {
+    width: 50px;
+    height: 50px;
+}
+
+#linkedincontact {
+    background-image: url("images/linkedin64.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+#githubcontact {
+    background-image: url("images/github64.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 20px;
+}
+
+#instagramcontact {
+    background-image: url("images/instagram64.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 20px;
+}
+
+/* LOADER */
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}

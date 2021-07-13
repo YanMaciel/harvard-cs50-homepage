@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="jquery.js"></script> <!-- Jquery full libray to use .fadeout function in the loading screen -->
+        <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+
+        <link href="styles.css" rel="stylesheet">
+        <title>Homepage of Yan Maciel</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="author" content="Yan Maciel">
+        <meta name="description" content="Student Portfolio of Yan Maciel. A project to practice HTML5, CSS3 and JS.">
+        <meta name="viewport" content="width=device-width, inital-scale= 1.0">
+    </head>
+
+    <body class="container">
+        <section class="header">
+            <a href="index.html" id="index"><b>Yan Maciel</b></a>
+            <a href="skills.html" class="headerButton"><b> Coding Skills </b></a>
+            <a href="hobbies.html" class="headerButton"><b> My Hobbies </b></a>
+            <a href="contact.html" class="headerButton"><b> Contact me </b></a>
+            <a href="https://www.linkedin.com/in/yanmaciel94/" target="_blank"><button id="linkedin"></button></a>
+            <a href="https://github.com/YanMaciel" target="_blank"><button id="github"></button></a>
+            <a href="https://www.instagram.com/yan.araujo94/" target="_blank"><button id="instagram"></button></a>
+        </section>
+
+        <div class="contactBody">
+            <br><h3><b>Contact me</b></h3>
+            <br><h5> Feel free to contact me, my preferred method is by email. Thank you!</h5>
+            <br>
+            <br><image id="email" src="images/email.png" alt=""></image>
+            <br><h5><b>E-mail</b></h5>
+            <h6 style="color: red;"><b>y.maciel.araujo@gmail.com</b></h6>
+            <br><br><h5>You can find me on all of the platforms below by clicking the respective icon.</h5>
+            <br>
+            <a href="https://www.linkedin.com/in/yanmaciel94/" target="_blank"><button id="linkedincontact"></button></a>
+            <a href="https://github.com/YanMaciel" target="_blank"><button id="githubcontact"></button></a>
+            <a href="https://www.instagram.com/yan.araujo94/" target="_blank"><button id="instagramcontact"></button></a>
+        </div>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+    </body>
+
+</html>
